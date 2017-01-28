@@ -91,6 +91,9 @@ console.log(india);
 /*9. Removing the last element from an array.
 Using the same india variable, remove the last element from the array. Console log the variable. */
 
+india.splice(india.length-1,1);
+console.log(india);
+
 /*10. Removing an element from an array into a new array. 
 Removethe first two elements in the snacks array and return a new array.
 Console log the new variable. */
