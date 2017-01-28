@@ -271,7 +271,7 @@ console.log(bigBox);
 
 /*22.  Declare a function named firstReverse which takes a single parameter str.  This function will take a string parameter being passed in and return the string in reverse order.*/
 
-var string = "This is a string.";
+var string = "this is a string.";
 
 function firstReverse(str) {
   newStr = "";
@@ -285,5 +285,20 @@ console.log(firstReverse(string));
 
 /*23. Declare a function named letterCap which takes a single parameter str. This function will capitalize the first letter of the string you pass in to invoke the function. 
 */
+
+function letterCap(str) {
+  var newStr = "";
+  for (var i = 0; i < str.length; i++) {
+    if (str.charAt(i-1) === " " || str.charAt(i-1) === "") {
+      newStr += str.charAt(i).toUpperCase();
+    }
+    else {
+      newStr += str.charAt(i);
+    }
+  }
+  return newStr;
+}
+
+console.log(letterCap(string));
 
 /*24. Declare a function named longestWord which takes a single parameter str. This function will return the longest word in the string when you invoke this function.*/ 
