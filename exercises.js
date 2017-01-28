@@ -115,6 +115,12 @@ b) a string and a number "three" and 3
 
 console log each variable*/
 
+var probablyFalse = ("Racecar" === "racecar");
+var alsoFalse = ("three" === 3);
+
+console.log(probablyFalse);
+console.log(alsoFalse);
+
 /*12.  Declare a literal object named "hotel" with properties and values set to:
 
     name    => "Hilton"
@@ -123,6 +129,10 @@ console log each variable*/
     checkIn => null
 
  console log the object*/
+
+ var hotel = {name: "Hilton", rooms: 200, pool: true, checkIn: null};
+
+ console.log(hotel)
 
 /*13.  Declare a literal object named "car" with properties and values set to:
 
