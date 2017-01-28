@@ -260,7 +260,28 @@ console.log(oldEnough(15));
 
 /*21. Declare a function named contentFiller which takes in a single parameter which will be an object.  Write a for loop that will put 5 random numbers between the values of 0 to 20 in the contents array in the bigBox object you created in exercise 14.  Console log the result.*/
 
+function contentFiller(obj) {
+  for (var i = 0; i < 5; i++) {
+    obj.contents.push(randomNumber(20));
+  }
+}
+
+contentFiller(bigBox);
+console.log(bigBox);
+
 /*22.  Declare a function named firstReverse which takes a single parameter str.  This function will take a string parameter being passed in and return the string in reverse order.*/
+
+var string = "This is a string.";
+
+function firstReverse(str) {
+  newStr = "";
+  for (var i = str.length; i >= 0; i--) {
+    newStr += str.charAt(i);
+  }
+  return newStr;
+}
+
+console.log(firstReverse(string));
 
 /*23. Declare a function named letterCap which takes a single parameter str. This function will capitalize the first letter of the string you pass in to invoke the function. 
 */
