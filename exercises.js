@@ -155,6 +155,19 @@ Add a property named contents and set it to be an empty array
 
 console log the object*/
 
+var bigBox = {};
+
+function randomNumber(max) {
+  max++;
+  return Math.floor(Math.random() * max);
+}
+
+bigBox.size = randomNumber(50);
+bigBox.color = "purple";
+bigBox.contents = [];
+
+console.log(bigBox);
+
 /*15.  Declare a literal object named "colorMeBadd" with properties and values set to:
 
    iro        => [literal object]
@@ -169,6 +182,10 @@ console log the object*/
    isJapanese => true              
 
 console log the object */ 
+
+colorMeBadd = {iro: {}, akai: "red", aoi: "blue", midori: "green", shiroi: "white", pinku: "pink", murasaki: "purple"};
+
+console.log(colorMeBadd);
 
 /*16. As the general manager for the DevLeague Prep Beer Pong Team, your job is to select the starting players from the roster array. Create two variables, Ateam and Bteam and assign each an empty array. You will then assigned players that have an even number index position to the Ateam and odd number index position to the Bteam. Let the games begin! Console log the results.*/
 
