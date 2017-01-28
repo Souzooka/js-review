@@ -132,7 +132,7 @@ console.log(alsoFalse);
 
  var hotel = {name: "Hilton", rooms: 200, pool: true, checkIn: null};
 
- console.log(hotel)
+ console.log(hotel);
 
 /*13.  Declare a literal object named "car" with properties and values set to:
 
@@ -142,6 +142,10 @@ console.log(alsoFalse);
     doors => 4
 
  console log the object*/
+
+ var car = {make: "BMW", models: "X5", year: 2015, doors: 4};
+
+ console.log(car);
 
 /*14.  Declare a literal object named bigBox and set its value to be an empty object.
 
