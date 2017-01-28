@@ -302,3 +302,17 @@ function letterCap(str) {
 console.log(letterCap(string));
 
 /*24. Declare a function named longestWord which takes a single parameter str. This function will return the longest word in the string when you invoke this function.*/ 
+
+function longestWord(str) {
+  var longestWord = "";
+  var wordArray = str.split(" ");
+  
+  for (var i = 0; i < wordArray.length; i++) {
+    if (wordArray[i].length > longestWord.length) {
+      longestWord = wordArray[i];
+    }
+  }
+  return longestWord;
+}
+
+console.log(longestWord(string));
