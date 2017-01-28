@@ -67,6 +67,12 @@ Console log the variable
 Console log "Earth" using the index position
 Console log "Uranus" using the index position*/
 
+var planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+
+console.log(planets);
+console.log(planets[2]);
+console.log(planets[6]);
+
 /*7. Variables with Array for its value.
 Declare a variable named india and assign the value of 3 popular tourist attractions.  
 Console log the variable.*/
